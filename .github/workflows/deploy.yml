@@ -9,7 +9,7 @@ on:
 jobs:
     deploy-bootcamp:
         # Runner definition: Where our workflows run 
-        runs-on: ubuntu-lastest
+        runs-on: ubuntu-latest 
         steps:
             # Dowload our repository and changes in the runner
             # - uses: actions/checkout@v4
