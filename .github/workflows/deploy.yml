@@ -11,7 +11,8 @@ jobs:
         # Runner definition: Where our workflows run 
         runs-on: ubuntu-lastest
         steps:
-            - uses: actions/checkout@v4
+            # Dowload our repository and changes in the runner
+            # - uses: actions/checkout@v4
             - run: echo "Pull our code 😎"
             - run: echo "Run migrations 🤪"
             - run: echo "Compile our code"
