@@ -1,0 +1,17 @@
+# Workflow definiton
+name: "Deploy" 
+# Trigger definition
+on: 
+    push: 
+        branches: ["main"]
+# Jobs definitions 
+# Jobs run on paralel form
+jobs:
+    deploy-bootcamp:
+        # Runner definition: Where our workflows run 
+        runs-on: ubuntu-lastest
+        steps:
+            - run: echo "Pull our code 😎"
+            - run: echo "Run migrations 🤪"
+            - run: echo "Compile our code"
+            - run: echo "New Release "
